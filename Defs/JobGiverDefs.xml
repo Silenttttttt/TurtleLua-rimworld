@@ -1,0 +1,7 @@
+<Defs>
+    <JobGiver>
+        <defName>JobGiver_DoNothing</defName>
+        <label>Do Nothing</label>
+        <description>This job does nothing.</description>
+    </JobGiver>
+</Defs>

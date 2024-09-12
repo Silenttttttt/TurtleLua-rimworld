@@ -1,0 +1,35 @@
+<Defs>
+    <!-- Main Think Tree -->
+    <ThinkTreeDef>
+        <defName>TurtleBotThinkTree</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <!-- Ensure no actions are performed -->
+                <li Class="ThinkNode_Tagger">
+                    <tagToGive>Idle</tagToGive>
+                    <subNodes>
+                        <!-- Use JobGiver_Idle if DoNothing is not found -->
+                        <li Class="JobGiver_Idle">
+                            <!-- No additional settings needed for JobGiver_Idle -->
+                        </li>
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+    
+    <!-- Constant Think Tree -->
+    <ThinkTreeDef>
+        <defName>TurtleBotConstantThinkTree</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+                    <subNodes>
+                        <li Class="JobGiver_FleePotentialExplosion" />
+                        <li Class="JobGiver_ConfigurableHostilityResponse" />
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+</Defs>

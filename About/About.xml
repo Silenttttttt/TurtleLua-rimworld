@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>com.Silent.turtlemodLua</packageId>
+  <name>TurtleModLua</name>
+  <author>YourName</author>
+  <description>A mod that adds a programmable Lua TurtleMod to RimWorld.</description>
+  <modVersion>1.0</modVersion>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+</ModMetaData>

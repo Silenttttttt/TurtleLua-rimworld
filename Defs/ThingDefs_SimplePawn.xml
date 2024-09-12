@@ -1,0 +1,69 @@
+<Defs>
+  <ThingDef Name="TurtleBot">
+    <defName>TurtleBot</defName>
+    <label>TurtleBot</label>
+    <description>A versatile TurtleBot robot designed for various tasks.</description>
+    <thingClass>TurtleMod.CustomTurtleBot</thingClass> 
+    <uiIconPath>TurtleBot</uiIconPath>
+    <category>Pawn</category>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <hasTooltip>true</hasTooltip>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <Flammability>0.0</Flammability>
+      <Mass>15</Mass>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+      <ComfyTemperatureMax>55</ComfyTemperatureMax>
+    </statBases>
+
+    <graphicData>
+      <texPath>TurtleBot</texPath> <!-- Path to your texture -->
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <race>
+      <body>Human</body> <!-- Use Human body as a placeholder -->
+      <baseBodySize>0.65</baseBodySize>
+      <baseHungerRate>0.0</baseHungerRate>
+      <baseHealthScale>0.5</baseHealthScale>
+      <fleshType>Mechanoid</fleshType>
+      <foodType>None</foodType>
+      <intelligence>ToolUser</intelligence>
+      <makesFootprints>false</makesFootprints>
+      <nameCategory>HumanStandard</nameCategory>
+      <wildness>0.1</wildness>
+      <mateMtbHours>0</mateMtbHours>
+      <ageGenerationCurve>
+        <points>
+          <li>(0,0)</li>
+          <li>(1,100)</li>
+          <li>(5,50)</li>
+          <li>(20,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <lifeExpectancy>5</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+      <thinkTreeMain>TurtleBotThinkTree</thinkTreeMain>
+      <thinkTreeConstant>TurtleBotConstantThinkTree</thinkTreeConstant>
+      <renderTree>Misc</renderTree>
+    </race>
+    
+    <tools>
+      <!-- Define tools for the TurtleBot if needed -->
+    </tools>
+    <butcherProducts>
+      <Steel>5</Steel>
+    </butcherProducts>
+  </ThingDef>
+</Defs>

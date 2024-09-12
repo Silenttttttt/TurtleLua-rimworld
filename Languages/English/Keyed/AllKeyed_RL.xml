@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- When translating this, remember not to change the Lua section, only the commented sections (2x -, COMMENT, \n) -->
+  <LuaTerminalInitText>--Insert lua functions here. \n--Credits to NLua for the Lua interpreter.\n--Remember to save!\nfunction tick()\n  --this function is called every tick.\nend\nfunction button_1()\n  --this function is called when button 1 is pressed.\nend</LuaTerminalInitText>
+  <LuaHelp>Help</LuaHelp>
+  <LuaConfig>Config</LuaConfig>
+  <LuaSave>Save and run</LuaSave>
+  <LuaButton>Lua-defined button {0}</LuaButton>
+  <LuaButton_Desc>Executes the Lua function '{0}' when pressed.</LuaButton_Desc>
+  <LuaSaveSuccessful>Save successful.</LuaSaveSuccessful>
+  <LuaError>Error</LuaError>
+  <LuaErrorContent>The logic node at {0} has encountered an error. Error was:\n\n{1}</LuaErrorContent>
+  <LuaWebsite>Visit the Lua website</LuaWebsite>
+  <LuaOutput>Output</LuaOutput>
+</LanguageData>

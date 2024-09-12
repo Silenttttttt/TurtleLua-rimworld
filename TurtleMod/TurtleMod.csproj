@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFramework>net472</TargetFramework>
+      <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    
+
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.UI">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+
+    <!-- These DLLs were built for .NET Framework 3.5 -->
+    <Reference Include="KopiLua">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\Mods\TurtleBotSimplified\Assemblies\KopiLua.dll</HintPath>
+    </Reference>
+    <Reference Include="NLua">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\Mods\TurtleBotSimplified\Assemblies\NLua.dll</HintPath>
+    </Reference>
+
+
+  </ItemGroup>
+
+</Project>

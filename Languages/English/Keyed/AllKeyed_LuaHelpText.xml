@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LuaHelpText>&lt;b&gt;&lt;size=24&gt;&lt;color=green&gt;Help&lt;/color&gt;&lt;/size&gt;&lt;/b&gt;
+This dialog can be opened at any time with the "Help" button on any logic node. It documents the various functions that you can use.
+
+&lt;b&gt;&lt;size=20&gt;What language is this?&lt;/size&gt;&lt;/b&gt;
+Logic nodes use Lua 5.1 as their language. You can learn more about lua using the link at the bottom of this dialog box. There are also plenty of websites teaching how to code lua.
+
+&lt;b&gt;&lt;size=20&gt;Special Functions&lt;/size&gt;&lt;/b&gt;
+The code you enter is actually only fed through the interpreter once - when you save. The special functions, however, can be executed more than once.
+
+&lt;b&gt;tick()&lt;/b&gt;
+
+The tick function is a function every node has. It is executed every time the game ticks. This may seem fast, but you can use some special code to control how fast it ticks (see General:TicksGame)
+
+&lt;b&gt;button_x()&lt;/b&gt; (where x is a number from 1 to 9 inclusive)
+
+When you define button_x, A button pops up next to the inspector when you select the building. When you press the button, button_x() is executed.
+
+&lt;b&gt;&lt;size=20&gt;Error handling&lt;/size&gt;&lt;/b&gt;
+Whenever there is an error, a letter will appear on the letter stack, informing you of the error. The error letters appear 240 ticks apart from each other to avoid spam.
+
+&lt;b&gt;&lt;size=20&gt;Commands&lt;/size&gt;&lt;/b&gt;
+
+Each section is a "module", with related commands packed together in each module. Remember, all of Lua's in-built functions (as of Lua 5.1) can be used as well.
+
+&lt;b&gt;&lt;size=18&gt;Module: General&lt;/size&gt;&lt;/b&gt;
+
+&lt;b&gt;General:Message("message")&lt;/b&gt;
+Creates a message in the top-left corner of the screen, with a specified string. The variants change the message sound.
+&lt;i&gt;Variants: General:MessageGood, General:MessageBad, General:MessageSilent&lt;/i&gt;
+
+&lt;b&gt;General:Letter("letter label", "letter message")&lt;/b&gt;
+Sends a blue letter to the letter stack on the right. The variants change the color of the letter.
+&lt;i&gt;Variants: General:LetterBad, General:LetterVeryBad, General:LetterCustom("letter label", "letter message", "LetterDef")&lt;/i&gt;
+
+&lt;b&gt;General:DebugMessage("message")&lt;/b&gt;
+Sends a debug message to RimWorld's in-built debug log. The variants allow you to send a warning, or an error.
+&lt;i&gt;Variants: General:DebugWarning, General:DebugError&lt;/i&gt;
+
+&lt;b&gt;General.TicksGame&lt;/b&gt; (It's the . notation, remember)
+This tells the player how many ticks have passed since the game started. It's useful for keeping track of time. However, the game uses TicksAbs to keep track of the date.
+
+TicksAbs is the absolute amount of ticks. It is used by the game to keep track of the time and date.
+&lt;i&gt;Variants: General.TicksAbs&lt;/i&gt;
+Example: 
+
+function tick()
+  if General.TicksGame % 60 == 0 then
+    General:MessageSilent("Hi!")
+  end
+end
+
+The above example will display a silent message "Hi!" every second (playing at 1x speed)
+&lt;i&gt;Tick guide:&lt;/i&gt;
+1 second at 1x speed: 60 ticks
+1 in-game hour: 2500 ticks
+1 in-game day: 60 000 ticks
+
+&lt;b&gt;General:DialogBox("message")&lt;/b&gt;
+Opens a dialog box with the displayed text.
+
+&lt;b&gt;&lt;size=18&gt;Module: Location&lt;/size&gt;&lt;/b&gt;
+
+
+
+</LuaHelpText>
+</LanguageData>

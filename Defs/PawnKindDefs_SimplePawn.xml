@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="TurtleBotPawn">
+    <defName>TurtleBot</defName>
+    <label>TurtleBot</label>
+    <race>TurtleBot</race>
+    <combatPower>15</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>TurtleBot</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+  </PawnKindDef>
+</Defs>
